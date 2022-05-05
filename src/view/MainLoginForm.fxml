@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="mainLoginContext" prefHeight="982.0" prefWidth="1512.0" style="-fx-background-color: #130f40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainLoginFormController">
+   <children>
+      <Separator layoutY="129.5" prefHeight="6.0" prefWidth="1512.0" />
+      <ImageView fitHeight="76.0" fitWidth="211.0" layoutX="1274.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Image/LogoSB.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="796.0" fitWidth="919.0" layoutX="568.0" layoutY="163.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Image/mainLoginBg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="32.0" text="Login as" textFill="#2e86de">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="497.0" text="or" textFill="#2e86de">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="332.0" layoutY="512.0" minWidth="158.0" prefHeight="5.0" prefWidth="201.0" />
+      <Button layoutX="32.0" layoutY="324.0" minHeight="58.0" minWidth="501.0" mnemonicParsing="false" onAction="#adminOnAction" prefHeight="63.0" prefWidth="501.0" style="-fx-background-color: #2e86de;" text="Admin" textAlignment="CENTER" textFill="#130f40">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2e86de" />
+         </effect>
+      </Button>
+      <Separator layoutX="34.0" layoutY="511.0" minWidth="158.0" prefHeight="5.0" prefWidth="201.0" />
+      <Button layoutX="32.0" layoutY="626.0" minHeight="58.0" minWidth="501.0" mnemonicParsing="false" onAction="#receptionistOnAction" prefHeight="63.0" prefWidth="501.0" style="-fx-background-color: #2e86de;" text="Receptionist" textAlignment="CENTER" textFill="#130f40">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2e86de" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
